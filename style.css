@@ -1,0 +1,29 @@
+html {
+                scroll-behavior: smooth;
+            }
+            .cormorant-text {
+                font-family: "Cormorant", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                }
+            .image-container {
+                width: 450px; /* Adjust as needed */
+                overflow: hidden;
+                position: relative;
+                border-top-left-radius: 50px; /* Rounded Top Left */
+                border-bottom-right-radius: 50px; /* Rounded Bottom Right */
+                border-top-right-radius: 0; /* Sharp Top Right */
+                border-bottom-left-radius: 0; /* Sharp Bottom Left */
+            }
+
+            .image-container img {
+                width: 130%;
+                height: auto;
+                display: block;
+            }
+            .bg-custom-opacity {
+                background-color: rgba(38, 0, 255, 0.25) !important;
+            }
+
+

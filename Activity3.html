@@ -4,9 +4,253 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!-- font style -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">            
         <title>Homepage</title>
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container">
+                <div class="d-flex align-items-center ">
+                        <img src="src/logo.png" style="height: 90px; width: auto;">
+                        <div>
+                            <h3 class="text-primary mb-0 cormorant-text">Barangay District IV</h3>
+                            <hr class="m-0 border-3 border-primary">
+                            <h4 class="fw-bold text-warning mb-0 text-center cormorant-text">Babatngon Leyte</h4>
+                        </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-5 ps-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary fs-5 " aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary fs-5" aria-current="page" href="#Officials">Offcials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary fs-5" aria-current="page" href="#Contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary fs-5" aria-current="page" href="#About">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse ms-5 ps-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary fs-5 " aria-current="page" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary fs-5" aria-current="page" href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="home" class="bg-primary" style="height: 50vh; position: relative;">
+            <div class="position-relative" style="height: 100%;
+                        background-image: url('src/MunicipalityOfBabatngon.jpg');
+                        background-size: cover;
+                        background-position: top;">
+
+                <!-- Overlay div -->
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-custom-opacity opacity-50"></div>
+
+                <!-- Content (Centered with Padding) -->
+                <div class="position-absolute top-50 start-50 translate-middle text-white w-100 d-flex align-items-center justify-content-center px-5">
+                    
+                    
+                    <!-- left Side - Text & Logos with Padding -->
+                    <div class="pe-5 text-center">
+                        <h1 class="cormorant-text mb-0 display-4">Welcome to</h1>
+                        <h1 class="fw-bold text-primary mb-0 cormorant-text display-4">Barangay Dist IV</h1>
+                        <!-- <div class="d-flex justify-content-center gap-4 mt-5">
+                            <img src="src/logo.png" alt="Dist_IV_logo" class="img-fluid" style="max-width: 120px;">
+                            <img src="src/Babatngon-logo.png" alt="Babtngon_logo" class="img-fluid" style="max-width: 120px;">
+                        </div> -->
+                    </div>
+
+                    <!-- right Side - Image with Padding -->
+                    <!-- <div class="pe-5 image-container"> 
+                        <img src="src/Barangay_dist4.jpg" alt="Babatngon Municipality">
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Barangay Governance and Records System -->
+        <div id="Governance"  style="height: 50vh; ">
+            <div class="container mt-5 pt-3 mb-5 d-flex justify-content-center align-items-center text-center">
+                <h2 class="mb-0 cormorant-text text-primary fw-bold">Barangay Governance and Records System</h2>
+            </div>
+            <div class="d-flex justify-content-center  gap-5">
+                <div class="d-flex flex-column align-items-center  text-center">
+                    <div class="border rounded-circle p-3 bg-secondary bg-custom-opacity">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
+                            <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"/>
+                            <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>
+                            <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"/>
+                        </svg>
+                    </div>
+                    <h6 class="mt-2">Budget & Financial <br> Management</h6>
+                </div>
+
+                <div class="d-flex flex-column align-items-center text-center">
+                    <div class="border rounded-circle p-3 bg-secondary bg-custom-opacity">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-people-fill" viewBox="0 0 16 16">
+                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                        </svg>
+                    </div>
+                    <h6 class="mt-2">Barangay Officials <br> & Members</h6>
+                </div>
+
+                <div class="d-flex flex-column align-items-center text-center">
+                    <div class="border rounded-circle p-3 bg-secondary bg-custom-opacity">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                        </svg>
+                    </div>
+                    <h6 class="mt-2">Resident Information <br> System</h6>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0 border-3 border-primary">
         
+        <!-- Offcials -->
+        <div id="Officials" class="mb-5">
+            <div class="d-flex mb-5 justify-content-center align-items-center h-100">
+                <h1 class="cormorant-text text-primary mb-0">BARANGAY OFFICIALS</h>
+                <img src="src/logo.png" style="height: 90px; width: auto;">
+            </div>
+
+            <div class="container ">
+                <!-- Row 1: 1 Card -->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-md-4">
+                        <div class="card text-center shadow">
+                            <div class="card-body">
+                                <img src="src/MEMBERS/Member.jpg" class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px; object-fit: cover;">
+                                <h5 class="card-title">Member 1</h5>
+                                <p class="card-text">Barangay Captain</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2: 2 Cards -->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-md-4">
+                        <div class="card text-center shadow">
+                            <div class="card-body">
+                                <img src="src/MEMBERS/Member.jpg" class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px; object-fit: cover;">
+                                <h5 class="card-title">Member 2</h5>
+                                <p class="card-text">Kagawad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center shadow">
+                            <div class="card-body">
+                                <img src="src/MEMBERS/Member.jpg" class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px; object-fit: cover;">
+                                <h5 class="card-title">Member 3</h5>
+                                <p class="card-text">Kagawad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3: 3 Cards -->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-md-4">
+                        <div class="card text-center shadow">
+                            <div class="card-body">
+                                <img src="src/MEMBERS/Member.jpg" class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px; object-fit: cover;">
+                                <h5 class="card-title">Member 4</h5>
+                                <p class="card-text">Kagawad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center shadow">
+                            <div class="card-body">
+                                <img src="src/MEMBERS/Member.jpg" class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px; object-fit: cover;">
+                                <h5 class="card-title">Member 5</h5>
+                                <p class="card-text">Kagawad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center shadow">
+                            <div class="card-body">
+                                <img src="src/MEMBERS/Member.jpg" class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px; object-fit: cover;">
+                                <h5 class="card-title">Member 6</h5>
+                                <p class="card-text">Kagawad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 4: 4 Cards -->
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <div class="card text-center shadow">
+                            <div class="card-body">
+                                <img src="src/MEMBERS/Member.jpg" class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px; object-fit: cover;">
+                                <h5 class="card-title">Member 7</h5>
+                                <p class="card-text">SK Chairman</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center shadow">
+                            <div class="card-body">
+                                <img src="src/MEMBERS/Member.jpg" class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px; object-fit: cover;">
+                                <h5 class="card-title">Member 8</h5>
+                                <p class="card-text">Secretary</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center shadow">
+                            <div class="card-body">
+                                <img src="src/MEMBERS/Member.jpg" class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px; object-fit: cover;">
+                                <h5 class="card-title">Member 9</h5>
+                                <p class="card-text">Treasurer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center shadow">
+                            <div class="card-body">
+                                <img src="src/MEMBERS/Member.jpg" class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px; object-fit: cover;">
+                                <h5 class="card-title">Member 10</h5>
+                                <p class="card-text">Kagawad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="bg-dark mt-5 text-light py-3">
+            <div class="container text-center">
+                <p class="mb-0">&copy; 2024 Barangay District IV. All rights reserved.</p>
+                <div class="mt-2">
+                    <a href="#" class="text-light mx-2">Facebook</a> | 
+                    <a href="#" class="text-light mx-2">Twitter</a> | 
+                    <a href="#" class="text-light mx-2">Instagram</a>
+                </div>
+            </div>
+        </footer>
+
     </body>
 </html>
