@@ -13,47 +13,54 @@
         <title>Homepage</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-            <div class="container">
-                <div class="d-flex align-items-center ">
-                        <img src="src/logo.png" style="height: 90px; width: auto;">
-                        <div>
-                            <h3 class="text-primary mb-0 cormorant-text">Barangay District IV</h3>
-                            <hr class="m-0 border-3 border-primary">
-                            <h4 class="fw-bold text-warning mb-0 text-center cormorant-text">Babatngon Leyte</h4>
-                        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <!-- Left Section: Welcome & Logo -->
+                <div class="d-flex align-items-center ms-5">
+                    <h3 class="cormorant-text mb-0 me-2">Welcome to</h3>
+                    <img src="src/logo.png" style="height: 90px; width: auto;">
+                    <div>
+                        <h3 class="text-primary mb-0 cormorant-text">Barangay District IV</h3>
+                        <hr class="m-0 border-3 border-primary">
+                        <h4 class="fw-bold text-warning mb-0 text-center cormorant-text">Babatngon Leyte</h4>
+                    </div>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse ms-5 ps-5" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
+                    <!-- Centered Navigation Links -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-primary fs-5 " aria-current="page" href="#home">Home</a>
+                            <a class="nav-link active text-primary fs-5" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-primary fs-5" aria-current="page" href="#Officials">Offcials</a>
+                            <a class="nav-link active text-primary fs-5" href="#Officials">Officials</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-primary fs-5" aria-current="page" href="#Contact">Contact</a>
+                            <a class="nav-link active text-primary fs-5" href="#Contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-primary fs-5" aria-current="page" href="#About">About</a>
+                            <a class="nav-link active text-primary fs-5" href="#About">About</a>
                         </li>
                     </ul>
-                </div>
-                <div class="collapse navbar-collapse ms-5 ps-5" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <!-- Right Section: Login & Register -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-primary fs-5 " aria-current="page" href="#">Login</a>
+                            <a class="nav-link active text-primary fs-5" href="#">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-primary fs-5" aria-current="page" href="#">Register</a>
+                            <a class="nav-link active text-primary fs-5" href="#">Register</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <div id="home" class="bg-primary" style="height: 50vh; position: relative;">
             <div class="position-relative" style="height: 100%;
                         background-image: url('src/MunicipalityOfBabatngon.jpg');
@@ -68,14 +75,14 @@
                     
                     
                     <!-- left Side - Text & Logos with Padding -->
-                    <div class="pe-5 text-center">
+                    <!-- <div class="pe-5 text-center">
                         <h1 class="cormorant-text mb-0 display-4">Welcome to</h1>
-                        <h1 class="fw-bold text-primary mb-0 cormorant-text display-4">Barangay Dist IV</h1>
+                        <h1 class="fw-bold text-primary mb-0 cormorant-text display-4">Barangay Dist IV</h1> -->
                         <!-- <div class="d-flex justify-content-center gap-4 mt-5">
                             <img src="src/logo.png" alt="Dist_IV_logo" class="img-fluid" style="max-width: 120px;">
                             <img src="src/Babatngon-logo.png" alt="Babtngon_logo" class="img-fluid" style="max-width: 120px;">
                         </div> -->
-                    </div>
+                    <!-- </div> -->
 
                     <!-- right Side - Image with Padding -->
                     <!-- <div class="pe-5 image-container"> 
@@ -87,7 +94,7 @@
         </div>
 
         <!-- Barangay Governance and Records System -->
-        <div id="Governance"  style="height: 50vh; ">
+        <div id="Governance" class="mb-5">
             <div class="container mt-5 pt-3 mb-5 d-flex justify-content-center align-items-center text-center">
                 <h2 class="mb-0 cormorant-text text-primary fw-bold">Barangay Governance and Records System</h2>
             </div>
@@ -126,7 +133,7 @@
         <hr class="m-0 border-3 border-primary">
         
         <!-- Offcials -->
-        <div id="Officials" class="mb-5">
+        <div id="Officials" class="mb-5 mt-5">
             <div class="d-flex mb-5 justify-content-center align-items-center h-100">
                 <h1 class="cormorant-text text-primary mb-0">BARANGAY OFFICIALS</h>
                 <img src="src/logo.png" style="height: 90px; width: auto;">
@@ -153,7 +160,7 @@
                             <div class="card-body">
                                 <img src="src/MEMBERS/Member.jpg" class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px; object-fit: cover;">
                                 <h5 class="card-title">Member 2</h5>
-                                <p class="card-text">Kagawad</p>
+                                <p class="card-text">Treasurer</p>
                             </div>
                         </div>
                     </div>
@@ -162,7 +169,7 @@
                             <div class="card-body">
                                 <img src="src/MEMBERS/Member.jpg" class="img-fluid rounded-circle mb-2" style="width: 100px; height: 100px; object-fit: cover;">
                                 <h5 class="card-title">Member 3</h5>
-                                <p class="card-text">Kagawad</p>
+                                <p class="card-text">Secretary</p>
                             </div>
                         </div>
                     </div>
